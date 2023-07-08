@@ -1,14 +1,12 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import {AiOutlineArrowRight} from 'react-icons/ai'
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 // Import Swiper React components
 import { SwiperContainer,SwiperCard } from './CarrousselStyle';
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 export const Carroussel=()=>{

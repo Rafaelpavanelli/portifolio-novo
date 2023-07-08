@@ -4,7 +4,7 @@ import { Theme } from './Theme';
 export const ThemeContext = createContext();
 export const ThemesProvider = ({ children }) => {
   const horas = new Date();
-  const [theme, setTheme] = useState(horas.getTime() < 19 && horas.getTime()> 6 ? Theme.light : Theme.dark);
+  const [theme, setTheme] = useState(horas.getHours() < 19 && horas.getHours()> 6 ? Theme.light : Theme.dark);
  console.log(horas.getTime());
   const alterTheme = () => {
     if (theme === Theme.dark) {
