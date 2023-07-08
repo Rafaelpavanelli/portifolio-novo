@@ -17,7 +17,7 @@ export const TypingEffect = ({ text,timing }) => {
     return () => {
       clearInterval(timer);
     };
-  }, [currentIndex, text]);
+  }, [currentIndex, text,timing]);
 
   return <span>{displayText}</span>;
 };
