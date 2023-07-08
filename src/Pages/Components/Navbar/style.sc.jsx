@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 export const Container = styled.div`
+  z-index:100;
   font-family: 'Inconsolata';
   font-weight: 300;
   text-transform: uppercase;
@@ -68,7 +69,7 @@ export const ButtonTheme=styled.button`
   position: fixed;
   bottom: 10px;
   right: 10px;
-  z-index: 1000;
+  z-index: 10;
   
 `;
 export const Link=styled.li`
