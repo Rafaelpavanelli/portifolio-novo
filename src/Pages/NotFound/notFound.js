@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   align-items: center;
@@ -7,6 +7,6 @@ export const Container = styled.div`
   font-size: 2rem;
   flex-direction: column;
   text-transform: uppercase;
-  font-family: 'Inconsolata';
-  color: ${props=>props.theme.primary}
+  font-family: "Inconsolata";
+  color: ${(props) => props.theme.primary};
 `;
