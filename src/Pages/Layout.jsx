@@ -1,5 +1,5 @@
-import { Navbar } from "./Components/Navbar"
 import { ThemeProvider } from "styled-components"
+import { ButtonThemes } from "./Components/ButtonTheme";
 import { ThemeContext } from "../Context.site"
 import { useContext } from "react"
 import { App } from "./appStyle";
@@ -9,9 +9,9 @@ export const Layout=({children})=>{
     <>
     <ThemeProvider theme={theme}>
       <App>
-      <Navbar />
       {children}
       </App>
+      <ButtonThemes />
     </ThemeProvider>
      
     </>
