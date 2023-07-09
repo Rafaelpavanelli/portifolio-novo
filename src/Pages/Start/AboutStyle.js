@@ -7,8 +7,9 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3.0rem;
+ text-align: center;
  h1{
-  color: ${props=>props.theme.primary}
+  color: ${props=>props.theme.primary};
+  font-size: 4rem;
  }
 `;

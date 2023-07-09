@@ -18,10 +18,9 @@ export const SwiperContainer=styled(Swiper)`
 export const SwiperCard=styled(SwiperSlide)`
  background-position: center;
   background-size: cover;
-  width: 30vw;
+  width: 40%;
   height: auto;
   display: inline-block;
-  
   img{
     display: block;
     width: 100%;
@@ -46,14 +45,6 @@ export const SwiperCard=styled(SwiperSlide)`
         animation:  ${Animation} 1s linear infinite;
       }
   }
-
-  @media screen and (max-width: 767px) {
-    p{
-      color: white;
-      font-size:0.8rem;
-      overflow-y: auto;
-    }
-  }
   &:hover{
     img{
       filter: brightness(50%);
@@ -62,4 +53,14 @@ export const SwiperCard=styled(SwiperSlide)`
       color: white;
     }
   }
+  @media screen and (max-width: 767px) {
+    height: 40%;
+    width: 50%;
+    p{
+      color: white;
+      font-size:70%;
+      overflow-y: auto;
+    }
+  }
+  
 `
