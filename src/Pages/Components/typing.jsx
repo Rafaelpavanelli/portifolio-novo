@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-export const TypingEffect = ({ text,timing }) => {
-  const [displayText, setDisplayText] = useState('');
+export const TypingEffect = ({ text, timing }) => {
+  const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -17,9 +17,7 @@ export const TypingEffect = ({ text,timing }) => {
     return () => {
       clearInterval(timer);
     };
-  }, [currentIndex, text,timing]);
+  }, [currentIndex, text, timing]);
 
   return <span>{displayText}</span>;
 };
-
-
