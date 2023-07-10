@@ -47,7 +47,7 @@ export const Carroussel = () => {
           <SwiperCard >
              <img src={item.img} alt='Imagem do Projeto' />
              <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et recusandae quo unde neque rem rerum maiores, eligendi libero beatae consequatur delectus quos distinctio perferendis, suscipit officiis itaque iure optio. Tenetur.</p>
-             <a href="#" >Ver Projeto <AiOutlineArrowRight/></a>
+             <a href="#google" >Ver Projeto <AiOutlineArrowRight/></a>
           </SwiperCard> 
            </div>
           )
