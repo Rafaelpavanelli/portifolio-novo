@@ -1,9 +1,9 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home } from './Pages/Home/Index';
-import { ThemesProvider } from './Context.site';
-import { NotFound } from './Pages/NotFound/NotFound.jsx';
-import { Layout } from './Pages/Layout';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./Pages/Home/Index";
+import { ThemesProvider } from "./Context.site";
+import { NotFound } from "./Pages/NotFound/NotFound.jsx";
+import { Layout } from "./Pages/Layout";
 
 export const Router = () => {
   return (
