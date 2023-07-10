@@ -1,6 +1,5 @@
 import React from 'react';
 import {AiOutlineArrowRight} from 'react-icons/ai'
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 // Import Swiper React components
@@ -43,13 +42,13 @@ export const Carroussel=()=>{
       >
         {props.map((item, index) => {
           return (
-            <>
-          <SwiperCard key={index}>
+            <div key={(index + 1)}>
+          <SwiperCard >
              <img src={item.img} alt='Imagem do Projeto' />
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et recusandae quo unde neque rem rerum maiores, eligendi libero beatae consequatur delectus quos distinctio perferendis, suscipit officiis itaque iure optio. Tenetur.</p>
-             <a href="#">Ver Projeto <AiOutlineArrowRight/></a>
+             <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et recusandae quo unde neque rem rerum maiores, eligendi libero beatae consequatur delectus quos distinctio perferendis, suscipit officiis itaque iure optio. Tenetur.</p>
+             <a href="#" >Ver Projeto <AiOutlineArrowRight/></a>
           </SwiperCard> 
-           </>
+           </div>
           )
         })}
         
